@@ -2,38 +2,37 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 ---
-<MainLayout title="Astro, Tailwind, Alpine, Motion One og Animate CSS Starter">
-	<article class="prose" x-data>
-		<h1>Astro, Tailwind, Alpine, Motion One og Animate CSS kombineret i en fin, lille starter:-)</h1>
-		<p>Brug starteren til at komme godt i gang med dine Digital Design projekter</p>
-		<p>Se også:</p>
-		<ul>
-			<li><a href="https://astro.build/" alt="Astro Website" target="_blank">Astro</a></li>
-			<li><a href="https://tailwindcss.com/" alt="Tailwind CSS website" target="_blank">Tailwind</a></li>
-			<li><a href="https://alpinejs.dev/" alt="Alpine JS website" target="_blank">Alpine.js</a></li>
-			<li><a href="https://motion.dev/" alt="Motion One website" target="_blank">Motion One</a></li>
-			<li><a href="https://animate.style/" alt="Animate.CSS website" target="_blank">Animate CSS</a></li>
-		</ul>
-		<p>
-			Start med at clone repo'et fra Github: <a href="https://github.com/stefangrage/astro-tailwind-alpine-motion-animate-starter" alt="Astro, Tailwind, Alpine, Motion One og Animate CSS Starter">https://github.com/stefangrage/astro-tailwind-alpine-motion-animate-starter</a>
-		</p>
-		<p>
-			Tilpas derefter indholdet i "pages, layouts, components og assets...
-		</p>
-		<p>
-			Og vigtigst af alt: Lav noget godt:-)
-		</p>
-		<p>
-			Se også <a href="http://motherfuckingwebsite.com/" alt="mf website">dette lille site</a> for lidt inspiration.
-		</p>
-		<div>
-		<Button>Fang mig hvis du kan:-)</Button>
-		</div>
-	</article>
+<MainLayout title="Digital Skraldedag">
+	<section id="sektion_2_og_3" class="sm:grid grid-cols-2">
+		<article class="pb-16">
+			<h2 class="font-['Trebuchet_MS'] font-black text-neutral-100 text-center text-2xl leading-normal">Problemerne med digitalt affald</h2>
+			<div class="grid grid-cols-2 place-items-center p-14 sm:p-10 gap-10">
+				<img src="../src/assets/images/skraldespand.svg" alt="" class="p-2 sm:mr-10 md:mr-32">
+				<p class="font-['Trebuchet_MS'] text-neutral-100 text-xs leading-normal w-48 sm:w-72 md:w-96 p-1 sm:p-16">Overflødige e-mails, filer, apps og kopier af billeder og videoer er alt sammen digitalt affald.</p>
+				<img src="../src/assets/images/sky_tjenester.svg" alt="" class="p-4 sm:mr-10 md:mr-32">
+				<div>
+					<p class="font-['Trebuchet_MS'] text-neutral-100 text-xs leading-normal w-48 sm:w-72 md:w-96 pb-4 p-1 sm:px-16">Digitalt affald skaber forurening, som bliver ved med at bruge energi, selv når vi har glemt det.</p>
+					<p class="font-['Trebuchet_MS'] text-neutral-100 text-xs leading-normal w-48 sm:w-72 md:w-96 p-1 sm:px-16">Affaldet ligger i backup'en på servere, der giver os cloud-tjenester, og det bruger elektricitet.</p>
+					</div>
+				<img src="../src/assets/images/co-2_produktion.svg" alt="" class="p-2 sm:mr-10 md:mr-32">
+				<p class="font-['Trebuchet_MS'] text-neutral-100 text-xs leading-normal w-48 sm:w-72 md:w-96 p-1 sm:p-16">Hvert år producerer internettet og dets støttesystemer mere end 900 millioner tons CO2.</p>
+				</div>
+		</article>
+		<article>
+		<h2 class="font-['Trebuchet_MS'] font-black text-neutral-100 text-center text-2xl leading-normal">Vidste du det?</h2>
+		<div class="grid grid-cols-2 place-items-center p-14 sm:p-10 gap-10">
+				<img src="../src/assets/images/streamning.svg" alt="" class="p-4 sm:mr-10 md:mr-32">
+				<p class="font-['Trebuchet_MS'] text-neutral-100 text-xs leading-normal w-48 sm:w-72 md:w-96 p-3 sm:p-16">Hvis 70 millioner abbonenter på streamning sænkede videoens kvalitet fra HD til Standard, ville der være en månedlig reduktion på 3,5 millioner tons CO2.</p>
+				<img src="../src/assets/images/hoover_dam.svg" alt="" class="sm:mr-10 md:mr-32">
+				<p class="font-['Trebuchet_MS'] text-neutral-100 text-xs leading-normal w-48 sm:w-72 md:w-96 p-4 sm:p-16">Google bruger 15.616 MWh energi hver dag, hvilket er mere end hvad Hoover Dam producerer, og det ville kunne forsyne et helt land med 1 million indbyggere med strøm i en dag.</p>
+				<img src="../src/assets/images/solpanel.svg" alt="" class="sm:mr-10 md:mr-32">
+				<p class="font-['Trebuchet_MS'] text-neutral-100 text-xs leading-normal w-48 sm:w-72 md:w-96 p-4 sm:p-16">Vores grænseløse forbrug af data i dag kræver mere end 3 gange mere energi end alle solpaneler i verden kan producere.</p>
+				</div>
+			</article>
+	</section>
 </MainLayout>
 <style>
-	ul>li:hover{
-		animation: headShake; /* referring directly to the animation's @keyframe declaration */
-  		animation-duration: 1s; /* don't forget to set a duration! */
-	}
+img {
+  width: 100%;
+}
 </style>

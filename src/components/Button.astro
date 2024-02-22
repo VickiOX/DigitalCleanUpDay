@@ -1,5 +1,5 @@
 ---
+const { variant, link } = Astro.props;
 ---
-<div>
-    <button><slot /></button>
-</div>
+
+<a class={variant} href={link}><slot /></a>

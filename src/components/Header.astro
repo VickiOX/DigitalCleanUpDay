@@ -1,2 +1,44 @@
 ---
 ---
+<div x-data="{ showmenu: false }" class="p-6 fixed w-full z-50 bg-neutral-900 text-neutral-100">
+    <div id="navbar" class="flex flex-row justify-between">
+        <div id="logo" class="bg-[url('/footer_ikoner/logo.svg')] hover:bg-[url('/footer_ikoner/logo_hover.svg')] bg-cover w-[4.5rem] h-[5rem] transition duration-500 hover:opacity-95">
+            <a href="#top"></a>
+        </div>
+        <nav id="desktopmenu" class="hidden lg:block">
+            <ul class="flex flex-row gap-6 pt-8">
+                <li class="hover:text-green-200 hover:border hover:border-b-1 hover:border-l-0 hover:border-r-0 hover:border-t-0 hover:border-green-200 hover:pb-2"><a href="#">Digital Skrald</a></li>
+                <li class="hover:text-green-200 hover:border hover:border-b-1 hover:border-l-0 hover:border-r-0 hover:border-t-0 hover:border-green-200 hover:pb-2"><a href="#">Problemet</a></li>
+                <li class="hover:text-green-200 hover:border hover:border-b-1 hover:border-l-0 hover:border-r-0 hover:border-t-0 hover:border-green-200 hover:pb-2"><a href="#">'Vidste du?'</a></li>
+                <li class="hover:text-green-200 hover:border hover:border-b-1 hover:border-l-0 hover:border-r-0 hover:border-t-0 hover:border-green-200 hover:pb-2"><a href="#">Retningslinjer</a></li>
+                <li class="hover:text-green-200 hover:border hover:border-b-1 hover:border-l-0 hover:border-r-0 hover:border-t-0 hover:border-green-200 hover:pb-2"><a href="#">Mit resultat</a></li>
+                <li> <!-- Indsæt button med text REGISTRER her --></li>
+            </ul>
+        </nav>
+        <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu">Menu</button>
+    </div>
+    <nav id="mobilmenu" class="flex flex-col content-center list-none" x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
+        <ul >
+            <li class="text-center py-4"><a href="#">Digital Skrald</a></ul></li>
+            <li class="text-center py-4"><a href="#">Problemet</a></li>
+            <li class="text-center py-4"><a href="#">'Vidste du?'</a></li>
+            <li class="text-center py-4"><a href="#">Retningslinjer</a></li>
+            <li class="text-center py-4"><a href="#">Mit resultat</a></li>
+            <li> <!-- Indsæt button med text REGISTRER her --></li>
+        </ul>
+    </nav>
+</div>
+
+<script> 
+    import { inView } from "motion";
+    
+     
+    //fadeIn
+    const bogfadein = document.querySelector(".bogFadeIn");
+    
+    inView(bogfadein, () => {
+    
+        bogfadein.classList.add("animate__animated", "animate__fadeIn", "animate__delay-1s");
+    
+    }); 
+    </script>

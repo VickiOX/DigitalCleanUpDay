@@ -1,14 +1,24 @@
 ---
 ---
 <section class="pb-28 w-96 mx-auto">
-    <img src="" alt="">
-    <h2 class="text-2xl lg:text-3xl font-bold py-16">Registrer dit digitale skrald</h2>
-    <form class="grid grid-cols-1 gap-2">
+    <img class=" mx-auto" src="/pixel_ikoner/flag.png" alt="pixel flag">
+    <h2 class="text-2xl lg:text-3xl text-center font-bold py-16 font-['Trebuchet_MS']">Registrer dit digitale skrald</h2>
+    <form class="grid grid-cols-1 gap-2 font-sm font-sans">
     
         <div class="grid grid-rows-2">
             <label for="fnavn" class=""></label>
-            <div class=" flex flex-row justify-between items-center border-orange-700 bg-red-300 hover:bg-orange-100 focus:border-black focus:bg-white focus:ring-0 border-2  rounded"> 
-                <input type="text" id="fnavn" name="Fornavn" placeholder="Fornavn" class=" bg-transparent focus:bg-black focus:ring-0 border-0 basis-11/12 ">
+            <div class=" flex flex-row justify-between items-center  bg-zinc-500 hover:bg-zinc-400 focus:bg-white focus:ring-0  rounded focus:rounded"> 
+                <input type="text" id="fnavn" name="Fornavn" placeholder="Fornavn" class=" bg-transparent focus:bg-zinc-500 focus:ring-0 border-0 basis-11/12 rounded ">
+               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 pr-2 ">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                </svg> 
+            </div>
+        </div>
+
+        <div class="grid grid-rows-2">
+            <label for="fnavn" class=""></label>
+            <div class=" flex flex-row justify-between items-center  bg-zinc-500 hover:bg-zinc-400 focus:border-black focus:bg-white focus:ring-0 rounded"> 
+                <input type="text" id="fnavn" name="Fornavn" placeholder="Efternavn" class=" bg-transparent focus:bg-zinc-500 focus:ring-0 border-0 basis-11/12 rounded ">
                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 pr-2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
                 </svg> 
@@ -17,18 +27,8 @@
 
         <div class="grid grid-rows-2">
             <label for="fnavn" class=""></label>
-            <div class=" flex flex-row justify-between items-center border-orange-700 bg-red-300 hover:bg-orange-100 focus:border-black focus:bg-white focus:ring-0 border-2 rounded"> 
-                <input type="text" id="fnavn" name="Fornavn" placeholder="Efternavn" class=" bg-transparent focus:bg-black focus:ring-0 border-0 basis-11/12 ">
-               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 pr-2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                </svg> 
-            </div>
-        </div>
-
-        <div class="grid grid-rows-2">
-            <label for="fnavn" class=""></label>
-            <div class=" flex flex-row justify-between items-center border-orange-700 bg-red-300 hover:bg-orange-100 focus:border-black focus:bg-white focus:ring-0 border-2 rounded"> 
-                <input type="text" id="fnavn" name="Fornavn" placeholder="Email adresse" class=" bg-transparent focus:bg-black focus:ring-0 border-0 basis-11/12 ">
+            <div class=" flex flex-row justify-between items-center  bg-zinc-500 hover:bg-zinc-400 focus:border-black focus:bg-white focus:ring-0 rounded"> 
+                <input type="text" id="fnavn" name="Fornavn" placeholder="Email adresse" class=" bg-transparent focus:bg-zinc-500 focus:ring-0 border-0 basis-11/12 rounded  ">
                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 pr-2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
                 </svg> 
@@ -38,38 +38,38 @@
 
         <div class="grid grid-rows-2">
             <label for="adresse" class=" "></label>
-            <input type="text" id="adresse" name="Adresse" placeholder="Land" class=" border-orange-700 hover:bg-orange-100 focus:border-black focus:bg-white focus:ring-0 border-2 rounded">
+            <input type="text" id="adresse" name="Adresse" placeholder="Land" class="bg-zinc-500  hover:bg-zinc-400 focus:border-black focus:bg-zinc-500 focus:ring-0 rounded border-0">
         </div>
 
         <div class="grid grid-rows-2">
             <label for="adresse" class=" "></label>
-            <input type="text" id="adresse" name="Adresse" placeholder="Organisationsnavn (valgfrit)" class=" border-orange-700 hover:bg-orange-100 focus:border-black focus:bg-white focus:ring-0 border-2">
+            <input type="text" id="adresse" name="Adresse" placeholder="Organisationsnavn (valgfrit)" class="bg-zinc-500  hover:bg-zinc-400 focus:border-black focus:bg-zinc-500 focus:ring-0 border-0 rounded ">
         </div>
 
         <div class="grid grid-rows-2">
-            <label for="adresse" class=" ">Deltagere</label>
-            <input type="text" id="adresse" name="Adresse" placeholder="1" class=" border-orange-700 hover:bg-orange-100 focus:border-black focus:bg-white focus:ring-0 border-2 rounded">
+            <label for="adresse" class=" pt-6">Deltagere</label>
+            <input type="text" id="adresse" name="Adresse" placeholder="1" class="bg-zinc-500  hover:bg-zinc-400 focus:border-black focus:bg-zinc-500 focus:ring-0 rounded border-0">
         </div>
 
        
 
         <div class="grid grid-rows-2 gap-0">
-            <label for="fnavn" class="">Mængde Slettet In GB</label>
-            <div class=" flex flex-row justify-between items-center border-orange-700 bg-red-300 hover:bg-orange-100 focus:border-black focus:bg-white focus:ring-0 border-2 rounded"> 
-                <input type="text" id="fnavn" name="Fornavn" placeholder="0" class=" bg-transparent focus:bg-black focus:ring-0 border-0 basis-11/12 ">
+            <label for="fnavn" class="pt-6">Mængde Slettet In GB</label>
+            <div class=" flex flex-row justify-between items-center  bg-zinc-500 hover:bg-zinc-400 focus:border-black focus:bg-zinc-500 focus:ring-0 rounded"> 
+                <input type="text" id="fnavn" name="Fornavn" placeholder="0" class=" bg-transparent focus:ring-0 focus:bg-zinc-500 border-0 basis-11/12 rounded ">
                 <p class="pr-2">GB</p>
             </div>
         </div>
 
-        <p>Total deleted 8511463 Gigabytes and saved 2127865 kg/year CO₂.</p>
+        <p class="py-8">Total deleted 8511463 Gigabytes and saved 2127865 kg/year CO₂.</p>
 
         <div class="pb-6">
-            <input type="checkbox" id="nyhedsbrev" name="Nyhedsbrev" class="rounded border-orange-700 hover:bg-orange-100 focus:border-orange-700 focus:bg-white text-orange-700 focus:ring-1 focus:ring-offset-2 border-2">
+            <input type="checkbox" id="nyhedsbrev" name="Nyhedsbrev" class="rounded bg-zinc-500  hover:bg-zinc-400  underline focus:bg-zinc-500 text-pink-600 focus:ring-0 focus:ring-offset-2 border-0">
             <label class="" for="nyhedsbrev">I agree with Lets do it, World Terms and Conditions</label>
         </div>
 
         <div class="pb-6">
-            <input type="checkbox" id="nyhedsbrev" name="Nyhedsbrev" class="rounded border-orange-700 hover:bg-orange-100 focus:border-orange-700 focus:bg-white text-orange-700 focus:ring-1 focus:ring-offset-2 border-2">
+            <input type="checkbox" id="nyhedsbrev" name="Nyhedsbrev" class="rounded bg-zinc-500  hover:bg-zinc-400  focus:bg-zinc-500 text-pink-600 focus:ring-0 focus:ring-offset-2 border-0">
             <label class="" for="nyhedsbrev">I want to sign up for news from World Cleanup Day</label>
         </div>
     
@@ -78,3 +78,10 @@
         <!-- <Button variant="primary" size="medium" >Køb her!</Button>-->
     </div>
 </section>
+
+<style>
+
+input::placeholder{
+  color: whitesmoke;
+}
+</style>

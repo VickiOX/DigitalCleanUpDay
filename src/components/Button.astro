@@ -1,5 +1,6 @@
 ---
+const buttonStyling = "bg-green-400 hover:bg-green-200 font-['Trebuchet_MS'] text-neutral-100 hover:text-neutral-700 text-sm font-medium px-4 py-3 shadow-lg rounded";
 ---
 <div>
-    <button><slot /></button>
+    <button class:list={[buttonStyling]}><slot /></button>
 </div>

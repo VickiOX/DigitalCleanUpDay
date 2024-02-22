@@ -1,0 +1,47 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Button from "./Button.astro";
+import '../styles/tailwind.css';
+import 'animate.css';
+const { title } = Astro.props;
+---
+<section id="hero_unit" class="p-14 sm:p-28 md:p-32 lg:p-36 xl:p-40">
+    <article class="pb-56">
+        <h1 class="font-['Trebuchet_MS'] text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-black text-neutral-100">DIGITAL</h1>
+        <h1 class="font-['Trebuchet_MS'] text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-black leading-normal text-neutral-100 pb-3 xl:pb-5">SKRALDEDAG</h1>
+        <h2 class="font-['Trebuchet_MS'] text-xl lg:text-2xl font-medium leading-normal text-neutral-100 pb-7">16. marts 2024</h2>
+        <Button>GEM DATOEN</Button>
+    </article>
+    <article class="px-10 sm:px-20 md:px-32 lg:px-40 xl:px-52 pb-24 text-center text-neutral-100">
+        <h2 class="font-['Trebuchet_MS'] font-bold text-xl lg:text-2xl leading-normal pb-4">Hvad er digitalt affald?</h2>
+        <p class="font-sans font-semibold leading-normal text-xs xl:text-base lg:px-28">I den digitale verden er der, ligesom i miljøet, en enorm mængde affald. Ifølge nogle beretninger står internetforbrug for 3,7% af de globale emissioner, hvilket svarer til al luftfart i verden - og dette tal forventes at fordoble sig inden 2025.</p>
+    </article>
+</section>
+<section id="sektion_2_og_3" class="sm:grid grid-cols-2">
+    <article class="pb-16 sm:pb-0 sm:mr-14 sm:ml-5 md:mr-20 md:ml-14 lg:mr-28 lg:ml-20 xl:ml-28 xl:mr-20">
+        <h2 class="font-['Trebuchet_MS'] font-black text-neutral-100 text-center text-2xl leading-normal xl:pb-5">CO2-problemer:</h2>
+        <div class="grid grid-cols-2 place-items-center p-14 gap-10 sm:gap-y-16 sm:px-10 md:px-5 lg:px-14 xl:px-20">
+            <img src="../src/assets/images/skraldespand.svg" alt="" class="px-5 sm:px-0 sm:mr-3 lg:px-3 xl:px-5">
+            <p class="font-sans text-neutral-100 text-xs lg:font-medium	xl:font-semibold leading-normal w-48 pr-5 sm:w-72 lg:w-80 xl:w-96 sm:px-16 lg:px-14 xl:px-20">Overflødige e-mails, filer, apps og kopier af billeder og videoer er alt sammen digitalt affald.</p>
+            <img src="../src/assets/images/sky_tjenester.svg" alt="" class="px-7 sm:px-1 sm:mr-5 md:px-3 lg:px-4 xl:px-7">
+            <div>
+                <p class="font-sans text-neutral-100 text-xs lg:font-medium	xl:font-semibold leading-normal w-48 pr-5 pb-4 sm:w-72 lg:w-80 xl:w-96 sm:px-16 lg:px-14 xl:px-20">Digitalt affald skaber forurening, som bliver ved med at bruge energi, selv når vi har glemt det.</p>
+                <p class="font-sans text-neutral-100 text-xs lg:font-medium	xl:font-semibold leading-normal w-48 pr-5 sm:w-72 lg:w-80 xl:w-96 sm:px-16 lg:px-14 xl:px-20">Affaldet ligger i backup'en på servere, der giver os cloud-tjenester, og det bruger elektricitet.</p>
+            </div>
+            <img src="../src/assets/images/co-2_produktion.svg" alt="" class="px-4 sm:px-0 sm:mr-4 md:px-1 lg:px-2 xl:px-4">
+            <p class="font-sans text-neutral-100 text-xs lg:font-semibold leading-normal w-48 pr-5 sm:w-72 lg:w-80 xl:w-96 sm:px-16 lg:px-14 xl:px-20">Hvert år producerer internettet og dets støttesystemer mere end 900 millioner tons CO2.</p>
+        </div>
+    </article>
+    <article class="sm:mr-12 md:mr-20 lg:mr-28 xl:mr-36">
+        <h2 class="font-['Trebuchet_MS'] place-items-center font-black text-neutral-100 text-center text-2xl leading-normal xl:pb-5">"Vidste du det?"</h2>
+        <div class="grid grid-cols-2  p-14 gap-10 sm:gap-y-16 sm:px-10 md:px-5 lg:px-14 xl:px-20">
+            <img src="../src/assets/images/streamning.svg" alt="" class="px-8 sm:px-3 sm:mr-7 md:px-8 md:mr-0 lg:px-10">
+            <p class="font-sans text-neutral-100 text-xs lg:font-medium	xl:font-semibold leading-normal w-48 pr-5 sm:w-72 lg:w-80 xl:w-96 sm:px-16 lg:px-14 xl:px-20">Hvis 70 millioner abbonenter på streamning sænkede videoens kvalitet fra HD til Standard, ville der være en månedlig reduktion på 3,5 millioner tons CO2.</p>
+            <img src="../src/assets/images/hoover_dam.svg" alt="" class="px-3 sm:px-0 sm:mr-3 md:px-3 md:mr-0 lg:px-5 xl:px-5">
+            <p class="font-sans text-neutral-100 text-xs lg:font-medium	xl:font-semibold leading-normal w-48 pr-4 sm:w-72 lg:w-80 xl:w-96 sm:px-16 lg:px-14 xl:px-20">Google bruger 15.616 MWh energi hver dag, hvilket er mere end hvad Hoover Dam producerer, og det ville kunne forsyne et helt land med 1 million indbyggere med strøm i en dag.</p>
+            <img src="../src/assets/images/solpanel.svg" alt="" class="px-3 sm:px-0 sm:mr-4 md:px-3 md:mr-0 lg:px-4 xl:px-5">
+            <p class="font-sans text-neutral-100 text-xs lg:font-medium	xl:font-semibold leading-normal w-48 pr-5 sm:w-72 lg:w-80 xl:w-96 sm:px-16 lg:px-14 xl:px-20">Vores grænseløse forbrug af data i dag kræver mere end 3 gange mere energi end alle solpaneler i verden kan producere.</p>
+        </div>
+    </article>
+</section>

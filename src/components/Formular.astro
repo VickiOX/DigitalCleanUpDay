@@ -7,7 +7,7 @@ import Button from '../components/Button.astro';
     <form class="grid grid-cols-1 gap-2 font-sm font-sans bg-neutral-800 px-4">
     
         <div class="grid grid-rows-2">
-            <label for="fnavn" class=""></label>
+            <label for="fnavn" class=" text-transparent">Fornavn</label>
             <div class=" flex flex-row justify-between items-center  bg-zinc-500 hover:bg-zinc-400 focus:bg-white focus:ring-0  rounded focus:rounded"> 
                 <input type="text" id="fnavn" name="Fornavn" placeholder="Fornavn" class=" bg-transparent focus:bg-zinc-500 focus:ring-0 border-0 basis-11/12 rounded ">
                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 pr-2 ">
@@ -17,7 +17,7 @@ import Button from '../components/Button.astro';
         </div>
 
         <div class="grid grid-rows-2">
-            <label for="fnavn" class=""></label>
+            <label for="enavn" class="text-transparent">Efternavn</label>
             <div class=" flex flex-row justify-between items-center  bg-zinc-500 hover:bg-zinc-400 focus:border-black focus:bg-white focus:ring-0 rounded"> 
                 <input type="text" id="fnavn" name="Fornavn" placeholder="Efternavn" class=" bg-transparent focus:bg-zinc-500 focus:ring-0 border-0 basis-11/12 rounded ">
                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 pr-2">
@@ -27,9 +27,9 @@ import Button from '../components/Button.astro';
         </div>
 
         <div class="grid grid-rows-2">
-            <label for="fnavn" class=""></label>
+            <label for="email" class="text-transparent">Email</label>
             <div class=" flex flex-row justify-between items-center  bg-zinc-500 hover:bg-zinc-400 focus:border-black focus:bg-white focus:ring-0 rounded"> 
-                <input type="text" id="fnavn" name="Fornavn" placeholder="Email adresse" class=" bg-transparent focus:bg-zinc-500 focus:ring-0 border-0 basis-11/12 rounded  ">
+                <input type="text" id="email" name="email" placeholder="Email adresse" class=" bg-transparent focus:bg-zinc-500 focus:ring-0 border-0 basis-11/12 rounded  ">
                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 pr-2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
                 </svg> 
@@ -38,13 +38,13 @@ import Button from '../components/Button.astro';
  
 
         <div class="grid grid-rows-2">
-            <label for="adresse" class=" "></label>
-            <input type="text" id="adresse" name="Adresse" placeholder="Land" class="bg-zinc-500  hover:bg-zinc-400 focus:border-black focus:bg-zinc-500 focus:ring-0 rounded border-0">
+            <label for="land" class=" text-transparent">Land</label>
+            <input type="text" id="land" name="Land" placeholder="Land" class="bg-zinc-500  hover:bg-zinc-400 focus:border-black focus:bg-zinc-500 focus:ring-0 rounded border-0">
         </div>
 
         <div class="grid grid-rows-2">
-            <label for="adresse" class=" "></label>
-            <input type="text" id="adresse" name="Adresse" placeholder="Organisationsnavn (valgfrit)" class="bg-zinc-500  hover:bg-zinc-400 focus:border-black focus:bg-zinc-500 focus:ring-0 border-0 rounded ">
+            <label for="organisation" class="text-transparent "></label>
+            <input type="text" id="organisation" name="organisation" placeholder="Organisationsnavn (valgfrit)" class="bg-zinc-500  hover:bg-zinc-400 focus:border-black focus:bg-zinc-500 focus:ring-0 border-0 rounded ">
         </div>
 
         <div class="grid grid-rows-2">

@@ -4,7 +4,7 @@
 <section class=" pt-20 pb-20 flex-row md:mx-48 lg:mx-48 ">
 
 <h2 class="text-center text-neutral-100 font-['Trebuchet_MS'] font-bold  text-2xl md:text-3xl pb-20 ">Hvor meget har jeg slettet?</h2>
-<section class=" grid grid-cols-1 justify-center gap-20 mx-20 lg:grid-cols-2 lg:gap-40 lg:mx-48 text-neutral-100 font-sans">
+<section class=" grid grid-cols-1 justify-center gap-20 mx-20 lg:grid-cols-2 lg:gap-40 lg:mx-48 text-neutral-100 font-sans s5fadein">
 
 <article class="w-80">
     <div class="flex justify-center mb-4">
@@ -88,3 +88,18 @@
 </section>
 
 </div>
+
+<script>
+	import { inView } from "motion";
+
+ 
+    //fadeIn
+    const s5fadein = document.querySelector(".s5fadein");
+
+    inView(s5fadein, () => {
+
+	    s5fadein.classList.add("animate__animated", "animate__fadeIn", "animate__delay-1s");
+
+    }); 
+
+</script>

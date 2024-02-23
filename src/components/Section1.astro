@@ -5,6 +5,21 @@
     <div class="mx-auto text-center">
         <img class="mx-auto" src="/pixel_ikoner/skraldespand.png" alt="">
         <h2 class="text-2xl md:text-3xl font-['Trebuchet_MS'] font-bold py-4 pb-4">Hvad er digital affald?</h2>
-        <p class="lg:max-w-xl mx-auto font-sans text-base md:text-lg px-8">I den digitale verden er der, ligesom i miljøet, en enorm mængde affald. Ifølge nogle beretninger står internetforbrug for 3,7% af de globale emissioner, hvilket svarer til alt luftfart i verden. Og dette tal forventes at fordoble sig inden 20925.</p>
+        <p class="lg:max-w-xl mx-auto font-sans text-base md:text-lg px-8 s1fadein">I den digitale verden er der, ligesom i miljøet, en enorm mængde affald. Ifølge nogle beretninger står internetforbrug for 3,7% af de globale emissioner, hvilket svarer til alt luftfart i verden. Og dette tal forventes at fordoble sig inden 20925.</p>
     </div>
 </article>
+
+
+<script>
+	import { inView } from "motion";
+
+ 
+    //fadeIn
+    const s1fadein = document.querySelector(".s1fadein");
+
+    inView(s1fadein, () => {
+
+	    s1fadein.classList.add("animate__animated", "animate__fadeIn", "animate__delay-1s");
+
+    }); 
+</script>

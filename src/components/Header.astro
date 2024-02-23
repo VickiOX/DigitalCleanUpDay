@@ -25,21 +25,8 @@ import Button from '../components/Button.astro';
             <li class="text-center font-sans  font-sm py-4"><a href="#">'Vidste du?'</a></li>
             <li class="text-center font-sans  font-sm py-4"><a href="#">Retningslinjer</a></li>
             <li class="text-center font-sans  font-sm py-4"><a href="#">Mit resultat</a></li>
-            <li> <!-- Indsæt button med text REGISTRER her --></li>
+            <li><Button variant="primary" size="large" >REGISTRER</Button></li>
         </ul>
     </nav>
 </div>
 
-<script> 
-    import { inView } from "motion";
-    
-     
-    //fadeIn
-    const bogfadein = document.querySelector(".bogFadeIn");
-    
-    inView(bogfadein, () => {
-    
-        bogfadein.classList.add("animate__animated", "animate__fadeIn", "animate__delay-1s");
-    
-    }); 
-    </script>
